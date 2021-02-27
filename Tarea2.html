@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+
+    <html lang = "en-US">
+        <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Tarea de herramientas de diseño </title>
+        </head>
+        <body style = "background-color: rgb(190, 245, 165);" margin = 0>
+            
+            <script>
+                var fecha = new Date();
+                var fecha3= new Date();
+                var fecha4= new Date()
+                var año = fecha.getFullYear();
+                var dia = fecha3.getUTCDate();
+                var month = fecha4.getUTCMonth();
+                alert("Usted ingresó el "+dia +" / " + month+" / " + año+ " por ello el currículo puede estar desactualizado");
+            </script>
+            
+            
+            
+            <header>
+                <h1 style = "font-size: 60px;" >Daniel Araujo </h1> 
+                <img id= "imagen1" src="" style="width: 100px;">
+                <button type="button" onclick="document.getElementById('imagen1').src='Imagen1.jpg'">Dar click aquí</button>
+                <h2 style = "color:blue;">Programador</h2>
+            </header>
+       
+        <me id = "uno" style= "display:none">
+            <h3 >Presentación</h3>
+            <p> 
+           
+                <ul style = "color: red;">
+                    <li style="font-family:verdana;">Edad: 19</li>
+                    <li>Estado, Ciudad: Carabobo, Valencia.</li>
+                    <contactar>
+                        <li style = "color: blue;">Número de contacto: 0414-7888813</li>
+                        <li style="font-family:Arial;">Correo Electrónico: danielaraujo495@gmail.com</li>
+                    </contactar>
+                </ul>
+            </p>
+        </me>
+        <button type="button" onclick="document.getElementById('uno').style.display='block'">Dar click aquí</button>
+        <education>
+            <h2>Estudios</h2>
+            <p  style = "font-size: 20px;">  
+                <ul>
+                    <li>2019 / <strong>Bachiller en Ciencias</strong> <br>
+                    Valencia, Venezuela / U.E. Colegio La fe</li>
+                    <li>2018 / <strong> Nivel de inglés C1</strong><br>
+                    Valencia, Venezuela / Language College</li>
+
+                </ul>
+            </p>
+        </education>
+        
+        <script>
+            function hola(){
+                document.getElementById("chocolate").innerHTML = "obteniendo nuevas habilidades en progreso..."
+            }
+        </script>
+
+            <button type="button" onclick=hola()>Hacer click</button>
+        <habilidade id="chocolate">
+            <h2 style="font-family:sans-serif;">Lenguajes de programación dominados</h2>
+            <P>
+                <ul>
+                    <li>Javascript</li>
+                    <li>Python</li>
+                </ul>
+            </P>
+        </habilidades>
+
+        <script src="codigo_aparte.js"></script>
+
+        <footer id = "cafe">
+            <p id="fecha">Enero, 2021</p>
+            
+            <button type="button" onclick='document.getElementById("fecha").innerHTML = "Febrero, 2021"'>Dar click aquí</button>
+           
+            <h4 style = "color: red ;" >¿Le gustó la página?</h4>
+            <form style = "color: blue;">
+                <input type="radio" id="valore la pagina" name="¿le gustó la pagina?" value="si">
+                <label for="si">Si</label><br>
+                <input type="radio" id="valore la pagina" name="¿le gustó la pagina?" value="no">
+                <label for="no">No</label><br>
+                <input type="radio" id="valore la pagina" name="¿le gustó la pagina?" value="Tal vez">
+                <label for="Tal vez">Tal vez</label>
+                <input type="submit" value="Submit">
+            </form>
+        </footer>
+        <button type="button" onclick = dos()>Hacer click</button>
+        </body>
+       
+    </html>
